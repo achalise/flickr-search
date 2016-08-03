@@ -1,0 +1,9 @@
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Tags</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="Please enter tags separated by comma" ng-model-options="{debounce : 1000}" ng-model='$ctrl.query' ng-change='$ctrl.submitSearch()'>
+    </div>
+  </div>
+</form>
+<div class='alert alert-info' ng-if='$ctrl.searching'>Loading pictures ..</div>
